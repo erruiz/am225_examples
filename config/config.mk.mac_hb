@@ -8,8 +8,8 @@ cflags=-Wall -ansi -pedantic -O3
 lp_lflags=-framework Accelerate
 
 # FFTW flags (installed via Homebrew)
-fftw_iflags=
-fftw_lflags=-lfftw3
+fftw_iflags=-I/usr/local/include
+fftw_lflags=-L/usr/local/lib -lfftw3
 
 # libpng flags (installed via Homebrew)
 png_iflags=
